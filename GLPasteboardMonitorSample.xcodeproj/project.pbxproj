@@ -19,6 +19,9 @@
 		472DDDC51858D6A200E64421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472DDDAD1858D6A200E64421 /* UIKit.framework */; };
 		472DDDCD1858D6A200E64421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 472DDDCB1858D6A200E64421 /* InfoPlist.strings */; };
 		472DDDCF1858D6A200E64421 /* GLPasteboardMonitorSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DDDCE1858D6A200E64421 /* GLPasteboardMonitorSampleTests.m */; };
+		472DDDDF185B755B00E64421 /* GLPasteboardMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DDDDE185B755B00E64421 /* GLPasteboardMonitor.m */; };
+		472DDDE2185BFA7600E64421 /* GLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 472DDDE1185BFA7600E64421 /* GLUtility.m */; };
+		472DDDE4185CD63100E64421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472DDDE3185CD63100E64421 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		472DDDCA1858D6A200E64421 /* GLPasteboardMonitorSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLPasteboardMonitorSampleTests-Info.plist"; sourceTree = "<group>"; };
 		472DDDCC1858D6A200E64421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		472DDDCE1858D6A200E64421 /* GLPasteboardMonitorSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPasteboardMonitorSampleTests.m; sourceTree = "<group>"; };
+		472DDDDD185B755B00E64421 /* GLPasteboardMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPasteboardMonitor.h; sourceTree = "<group>"; };
+		472DDDDE185B755B00E64421 /* GLPasteboardMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPasteboardMonitor.m; sourceTree = "<group>"; };
+		472DDDE0185BFA7600E64421 /* GLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtility.h; sourceTree = "<group>"; };
+		472DDDE1185BFA7600E64421 /* GLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUtility.m; sourceTree = "<group>"; };
+		472DDDE3185CD63100E64421 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		472DDD9D1858D6A200E64421 = {
 			isa = PBXGroup;
 			children = (
+				472DDDDC185B755B00E64421 /* GLPasteboardMonitor */,
 				472DDDAF1858D6A200E64421 /* GLPasteboardMonitorSample */,
 				472DDDC81858D6A200E64421 /* GLPasteboardMonitorSampleTests */,
 				472DDDA81858D6A200E64421 /* Frameworks */,
@@ -107,6 +116,7 @@
 		472DDDAF1858D6A200E64421 /* GLPasteboardMonitorSample */ = {
 			isa = PBXGroup;
 			children = (
+				472DDDE3185CD63100E64421 /* Main.storyboard */,
 				472DDDB81858D6A200E64421 /* GLAppDelegate.h */,
 				472DDDB91858D6A200E64421 /* GLAppDelegate.m */,
 				472DDDBB1858D6A200E64421 /* Images.xcassets */,
@@ -142,6 +152,17 @@
 				472DDDCB1858D6A200E64421 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472DDDDC185B755B00E64421 /* GLPasteboardMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				472DDDDD185B755B00E64421 /* GLPasteboardMonitor.h */,
+				472DDDDE185B755B00E64421 /* GLPasteboardMonitor.m */,
+				472DDDE0185BFA7600E64421 /* GLUtility.h */,
+				472DDDE1185BFA7600E64421 /* GLUtility.m */,
+			);
+			path = GLPasteboardMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472DDDE4185CD63100E64421 /* Main.storyboard in Resources */,
 				472DDDB41858D6A200E64421 /* InfoPlist.strings in Resources */,
 				472DDDBC1858D6A200E64421 /* Images.xcassets in Resources */,
 			);
@@ -241,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				472DDDB61858D6A200E64421 /* main.m in Sources */,
+				472DDDE2185BFA7600E64421 /* GLUtility.m in Sources */,
+				472DDDDF185B755B00E64421 /* GLPasteboardMonitor.m in Sources */,
 				472DDDBA1858D6A200E64421 /* GLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
