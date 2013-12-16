@@ -48,6 +48,10 @@ Finally, to keep monitoring pasteboard, you must implement the task competion in
 }
 ```
 
+## Requirement
+
+GLPasteboardMonitor must be built with ARC enabled.
+
 ## License
 
 GLPasteboardMonitor is available under the [MIT license](LICENSE).
