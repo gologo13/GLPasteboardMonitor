@@ -1,7 +1,7 @@
 GLPasteboardMonitor
 =====================================
 
-GLPasteboardMonitor monitors a change of the general pasteboard.
+GLPasteboardMonitor detects a change of the general pasteboard of the UIPasteboard.
 
 
 ## Usage
